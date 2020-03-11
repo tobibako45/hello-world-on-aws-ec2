@@ -35,3 +35,5 @@ pidfile ENV.fetch("PIDFILE") { "tmp/pids/server.pid" }
 
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
+
+bind "unix:///var/www/hello-world-on-aws-ec2/tmp/sockets/hello-world-on-aws-ec2.sock"
